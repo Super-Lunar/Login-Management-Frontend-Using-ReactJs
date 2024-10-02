@@ -1,0 +1,40 @@
+/* Navbar.css */
+.navbar {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* White background for the nav bar */
+  padding: 15px 0; /* Padding for some vertical spacing */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensure the navbar is always on top */
+}
+
+.navbar div {
+  display: flex;
+  justify-content: center; /* Center the links horizontally */
+  align-items: center; /* Center the links vertically */
+}
+
+.navbar a {
+  margin: 0 20px; /* Space between the links */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Dark grey text */
+  font-weight: 500; /* Slightly bold */
+  font-size: 18px; /* Decent size for readability */
+}
+
+.navbar a:hover {
+  color: #555; /* Slightly lighter color on hover */
+  border-bottom: 2px solid #555; /* Underline effect on hover */
+}
+
+.navbar .active {
+  color: #000; /* Black for the active link */
+  border-bottom: 2px solid black; /* Underline for the active link */
+}
+
+/* Add some margin to the content below the navbar to avoid overlap */
+body {
+  margin-top: 60px; /* Adjust this value depending on the height of the navbar */
+}

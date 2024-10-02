@@ -1,0 +1,84 @@
+/* Container for the form */
+.register-container {
+  max-width: 500px; 
+  width: 600px;/* Restrict the width of the form */
+  margin: 50px auto; /* Center the form on the page */
+  padding: 30px; /* Add padding around the form */
+  background-color: #ffffff; /* White background for form card */
+  border-radius: 10px; /* Rounded corners for the form */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Stylish shadow for depth */
+}
+
+/* Form title styling */
+.register-container h2 {
+  text-align: center; /* Center align the form title */
+  font-size: 28px; /* Increase the font size */
+  color: #333; /* Darker color for better readability */
+  margin-bottom: 20px; /* Add space between title and form fields */
+}
+
+/* Form group for inputs */
+.form-group {
+  margin-bottom: 20px; /* Space between input fields */
+}
+
+/* Label styling */
+.form-group label {
+  display: block; /* Make labels block-level */
+  font-size: 16px; /* Medium font size */
+  color: #555; /* Grey color for labels */
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Input field styling */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="date"] {
+  width: 100%; /* Full width input fields */
+  padding: 10px; /* Internal padding for text inputs */
+  font-size: 16px; /* Larger font size for inputs */
+  border: 2px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Slightly rounded corners */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+/* Input field focus effect */
+.form-group input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Radio button group */
+.gender-group {
+  display: flex; /* Use flexbox for horizontal layout */
+  align-items: center; /* Center align items vertically */
+  margin: 15px 0; /* Space above and below the gender options */
+}
+
+.gender-group label {
+  margin-right: 20px; /* Space between each radio button */
+  font-size: 16px; /* Medium font for gender labels */
+}
+
+.gender-group input[type="radio"] {
+  margin-right: 5px; /* Space between radio button and label */
+}
+
+/* Submit button styling */
+.submit-btn {
+  width: 100%; /* Full width button */
+  padding: 12px; /* Add padding to button */
+  background-color: #007bff; /* Green background for the button */
+  color: #fff; /* White text for contrast */
+  font-size: 18px; /* Larger font size */
+  border: none; /* Remove default borders */
+  border-radius: 5px; /* Rounded button corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* Darker green on hover */
+}

@@ -1,0 +1,95 @@
+/* Container for the form */
+.update-user-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f4f4f9; /* Light background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  font-family: "Poppins", sans-serif; /* Font style */
+}
+
+/* Heading style */
+.update-user-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Styling for form elements */
+.update-user-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields */
+.update-user-container input[type="text"],
+.update-user-container input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.update-user-container input[type="text"]:focus,
+.update-user-container input[type="date"]:focus {
+  border-color: #007bff; /* Border color on focus */
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+}
+
+/* Gender radio buttons aligned horizontally */
+.update-user-container .gender-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Radio button label */
+.update-user-container label {
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+}
+
+/* Radio button styling */
+.update-user-container input[type="radio"] {
+  margin-left: 10px;
+}
+
+/* Submit button styling */
+.update-user-container button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff; /* Button background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+.update-user-container button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .update-user-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .update-user-container button[type="submit"] {
+    font-size: 16px;
+  }
+}

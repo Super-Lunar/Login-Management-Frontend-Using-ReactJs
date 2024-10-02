@@ -1,0 +1,70 @@
+/* Container for the entire component */
+.read-all-users-container {
+  max-width: 800px; /* Max width of the component */
+  margin: 20px auto; /* Center the container */
+  padding: 20px; /* Padding for the container */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Individual user card style */
+.user-card {
+  margin: 15px 0; /* Space between user cards */
+  padding: 15px; /* Padding inside user cards */
+  border: 2px solid #007bff; /* Border color for user cards */
+  border-radius: 8px; /* Rounded corners for cards */
+  background-color: #fff; /* White background for user cards */
+  transition: transform 0.2s; /* Smooth transform effect */
+}
+
+.user-card:hover {
+  transform: scale(1.02); /* Slightly increase size on hover */
+}
+
+/* Paragraph style for user details */
+h2, .user-details {
+  margin: 5px 0; /* Margin for user detail paragraphs */
+  color:black;
+}
+
+/* Button container to align buttons */
+.button-container {
+  display: flex; /* Use flexbox for button alignment */
+  justify-content: flex-start; /* Align buttons to the left */
+  margin-top: 10px; /* Space above the buttons */
+}
+
+/* Common button styling */
+.button {
+  padding: 10px 15px; /* Padding for buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for buttons */
+  color: #fff; /* White text color */
+  background-color: #007bff; /* Blue background */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background change */
+  margin-right: 10px; /* Space between buttons */
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .read-all-users-container {
+    width: 95%; /* More space on smaller screens */
+  }
+
+  .button {
+    padding: 8px 12px; /* Adjust button padding on small screens */
+  }
+
+  .user-card {
+    padding: 10px; /* Less padding for user cards */
+  }
+}

@@ -1,0 +1,16 @@
+/* App.css */
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black; /* Set black background */
+  color: white; /* Optional: Makes text white for better visibility */
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

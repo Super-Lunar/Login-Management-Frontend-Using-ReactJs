@@ -1,0 +1,67 @@
+/* Styling for the main container */
+.user-details-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+/* User information card */
+.user-details-card {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.user-details-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styling */
+.user-details-card p {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Button styling */
+.user-details-card button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.user-details-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .user-details-container {
+    padding: 10px;
+  }
+
+  .user-details-card {
+    margin: 10px 0;
+  }
+
+  .user-details-card p {
+    font-size: 0.9rem;
+  }
+
+  .user-details-card button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
